@@ -31,4 +31,4 @@ jobs:
       - name: Build
         working-directory: matrix-rust-sdk
         run: |
-          cargo build --target aarch64-apple-ios
+          cargo build --verbose --verbose --target aarch64-apple-ios
