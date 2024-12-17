@@ -31,4 +31,5 @@ jobs:
       - name: Build
         working-directory: matrix-rust-sdk
         run: |
+          export CARGO_FEATURE_NO_NEON=1
           cargo build --verbose --verbose --target aarch64-apple-ios
